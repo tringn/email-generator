@@ -1,0 +1,14 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    admin:
+      email: admin@gmail.com
+      logged_in: false
+      name: poc
+      password: poc@123
+preauthorized:
+  emails:
+    - admin@gmail.com

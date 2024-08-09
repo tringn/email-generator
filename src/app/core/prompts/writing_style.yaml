@@ -1,0 +1,17 @@
+_type: prompt
+template: |
+  Based on the website content you received, I want you to identify the article in the website.
+  Based on the content of the article, give me a full description of the linguistic style, vocabulary use and tone used in the article.
+  Use a lot of detail and be very specific. I want to know things to be able to tell ChatGPT to write an email in that style.
+  Don’t talk about the subject of the article, focus only on the style and all the elements that would help a language model recreate it.
+  Only response the style without any unnecessary sentences.
+
+  ### Website Content:
+  {website}
+
+  ### Response:
+  1. Linguistic Style
+  2. Vocabulary Use
+  3. Tone
+input_variables:
+  - website
