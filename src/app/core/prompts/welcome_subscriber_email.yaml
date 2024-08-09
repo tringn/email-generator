@@ -1,0 +1,24 @@
+_type: prompt
+template: |
+  Write a compelling personal welcome email for new subscribers to {user_brand}. The email should be in the style of user writing style.
+
+  1. Use user story to share a personal anecdote about how {user_brand} was born from a personal challenge or passion.
+  2. Use user value proposition to clearly communicate the core value proposition of {user_brand} as a solution to audience's problems or desires.
+  3. End with Call to Action.
+
+  Remember, the entire email uses conversational language readable by even a 12 year old. Limit the email within 250 words.
+
+  ### User Story
+  {user_story}
+
+  ### User Value Proposition
+  {user_value_proposition}
+
+  ### User Writing Style
+  {user_writing_style}
+
+input_variables:
+  - user_brand
+  - user_story
+  - user_value_proposition
+  - user_writing_style

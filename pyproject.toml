@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ai-assisted-onboarding"
+version = "0.1.0"
+description = ""
+authors = ["Tri Ngo <nhutringo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11.8"
+langchain = "^0.2.12"
+langchain-openai = "^0.1.20"
+langchain-community = "^0.2.11"
+fastapi = "^0.112.0"
+pytest = "^8.3.2"
+bs4 = "^0.0.2"
+streamlit = "^1.37.1"
+pydantic-settings = "^2.4.0"
+uvicorn = "^0.30.5"
+streamlit-authenticator = "^0.3.3"
+six = "^1.16.0"
+pre-commit = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

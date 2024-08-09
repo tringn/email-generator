@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  email:
+    restart: always
+    build: src
+    ports:
+      - "8005:8000"
+    networks:
+      - ai-onboarding
+    container_name: email
+    env_file:
+      - .env
+
+  client:
+    restart: always
+    build: client
+    depends_on:
+      - email
+    ports:
+      - "7010:8501"
+    networks:
+      - ai-onboarding
+    container_name: client
+    environment:
+      - WELCOME_SUBSCRIBER_EMAIL_URL=http://email:8000/api/v1/email/generate/welcome_subscriber
+    env_file:
+      - .env
+
+networks:
+  ai-onboarding:
+    driver: bridge
